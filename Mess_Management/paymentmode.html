@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="style.css" rel="stylesheet">
+    </head>
+<body  id="payment">
+    <div class="heading">payment mode</div>
+     <div class="pay"><button class="text-c" value="cash" onclick="cash()">cash</button> </div>
+    <div class="pay"><button class="text-c" value="card" onclick="card()">card</button></div>
+    <script>
+    function func()
+        {
+    alert("Your Order Is Successfully Saved");
+        }
+    
+    function cash()
+        {
+            prompt("Enter Amount");
+            confirm("Are You Sure You Want To Make Payment");
+        }
+        function card()
+        {   prompt("Enter Card Number");
+            confirm("Are You Sure You Want To Make Payment");
+        }
+    </script>
+    <div class="button"><button class="submit-payment" onclick="func()" value="submit">submit</button></div>
+    </body>
+</html>
